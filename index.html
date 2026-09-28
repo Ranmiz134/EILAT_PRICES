@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מחירון DJI - אילת</title>
+    <title>מחירון DJI מלא - אילת</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f7; margin: 0; padding: 20px; color: #333; }
         .container { max-width: 800px; margin: 0 auto; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
@@ -20,241 +20,148 @@
 </head>
 <body>
 <div class="container">
-    <h1>חיפוש מחירון אילת - עדכני</h1>
-    <input type="text" id="searchInput" class="search-box" placeholder="חפש דגם..." onkeyup="filterProducts()">
+    <h1>חיפוש מחירון אילת - כל המוצרים</h1>
+    <input type="text" id="searchInput" class="search-box" placeholder="חפש דגם או אביזר (למשל: סוללה, תיק, Mini 4)..." onkeyup="filterProducts()">
     <ul class="product-list" id="productList">
-        <li class="product-item">
-            <span class="product-name">Mavic 4 Pro RC</span>
-            <span class="product-price">₪7,881</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Mavic 4 Pro RC Combo</span>
-            <span class="product-price">₪10,169</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Mavic 4 Pro RC Creator 512GB</span>
-            <span class="product-price">₪13,558</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Mavic 3 Pro (שלט רגיל)</span>
-            <span class="product-price">---</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Air 3S + RC 2 Combo</span>
-            <span class="product-price">---</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Mini 5 Pro (גוף בלבד)</span>
-            <span class="product-price">₪2,881</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Mini 5 Pro Fly More Combo</span>
-            <span class="product-price">₪3,813</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Mini 5 Pro Fly More Combo Plus</span>
-            <span class="product-price">₪4,067</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Mini 4 Pro (שלט רגיל)</span>
-            <span class="product-price">---</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Mini 4 Pro Plus Combo</span>
-            <span class="product-price">₪3,389</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Lito 1 (רחפן בלבד)</span>
-            <span class="product-price">₪1,228</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Lito 1 Fly More Combo (RC-N3)</span>
-            <span class="product-price">₪1,821</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Lito X1 Fly More Combo (RC 2)</span>
-            <span class="product-price">₪2,499</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Lito X1 Fly More Combo Plus</span>
-            <span class="product-price">₪2,838</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Avata Pro-View Combo RC2</span>
-            <span class="product-price">---</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Avata 2 Fly More (One Battery)</span>
-            <span class="product-price">₪3,389</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Avata 2 Fly More (3 Battery)</span>
-            <span class="product-price">₪3,686</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Avata 2 + Goggles Integra + Motion 2</span>
-            <span class="product-price">₪2,542</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Avata 360 (RC 2)</span>
-            <span class="product-price">₪2,669</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Avata 360 Fly More Combo (RC 2)</span>
-            <span class="product-price">₪3,728</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Avata 360 Motion Fly More</span>
-            <span class="product-price">₪3,728</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Neo (רחפן בלבד)</span>
-            <span class="product-price">₪762</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Neo Fly More Combo</span>
-            <span class="product-price">₪1,313</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Neo 2 (רחפן בלבד)</span>
-            <span class="product-price">₪1,228</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Neo 2 Fly More Combo</span>
-            <span class="product-price">₪1,609</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Neo 2 Motion Fly More Combo</span>
-            <span class="product-price">₪2,203</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Flip Fly More Combo</span>
-            <span class="product-price">---</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">DJI ROMO S</span>
-            <span class="product-price">₪3,389</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">DJI ROMO A</span>
-            <span class="product-price">₪3,813</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">DJI ROMO P</span>
-            <span class="product-price">₪4,491</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Action 6 Adventure Combo</span>
-            <span class="product-price">₪1,652</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Action 6 Standard Combo</span>
-            <span class="product-price">₪1,313</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Action 5 Pro Adventure Combo</span>
-            <span class="product-price">---</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Action 5 Pro Standard Combo</span>
-            <span class="product-price">---</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Action 5 Adventure Combo</span>
-            <span class="product-price">---</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Action 5 Standard Combo</span>
-            <span class="product-price">₪1,101</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Osmo 360 Adventure Combo</span>
-            <span class="product-price">₪1,991</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Osmo 360 Standard Combo</span>
-            <span class="product-price">₪1,482</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Osmo 360 2 Adventure Combo</span>
-            <span class="product-price">₪2,287</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Osmo Pocket 3 Creator Combo</span>
-            <span class="product-price">₪1,821</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Osmo Pocket 4 Creator Combo</span>
-            <span class="product-price">₪1,864</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Osmo Pocket 4 Standard Combo</span>
-            <span class="product-price">₪1,609</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Osmo Nano 64GB</span>
-            <span class="product-price">₪1,016</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Osmo Mobile 7</span>
-            <span class="product-price">₪279</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Osmo Mobile 7P</span>
-            <span class="product-price">₪364</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Osmo Mobile 8</span>
-            <span class="product-price">₪508</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Osmo Mobile 8P Advanced Tracking Combo</span>
-            <span class="product-price">₪677</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Osmo Mobile 8P Creator Combo</span>
-            <span class="product-price">₪847</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">RS 5 Combo</span>
-            <span class="product-price">₪2,075</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">RS 5 Standard</span>
-            <span class="product-price">₪1,779</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">RS 4 Pro Combo</span>
-            <span class="product-price">₪3,558</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">RS 4 Combo</span>
-            <span class="product-price">₪2,203</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">RS 4 Standard</span>
-            <span class="product-price">₪1,440</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">RS 4 Mini Combo</span>
-            <span class="product-price">₪1,313</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Mic 3 בודד (מקלט + משדר)</span>
-            <span class="product-price">₪677</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Mic 3 זוגי</span>
-            <span class="product-price">₪1,101</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Mic Mini 2 (1 TX + 1 RX)</span>
-            <span class="product-price">₪211</span>
-        </li>
-        <li class="product-item">
-            <span class="product-name">Mic Mini 2 (2 TX + 1 RX + Case)</span>
-            <span class="product-price">₪338</span>
-        </li>
+        <li class="product-item"><span class="product-name">כרטיס SanDisk Extreme Pro microSD 250S 128G</span><span class="product-price">₪169</span></li>
+        <li class="product-item"><span class="product-name">סוללה למשקף DJI AVATA 1 GOGGLES 2</span><span class="product-price">₪169</span></li>
+        <li class="product-item"><span class="product-name">תיק קל למגוון רחפני DJI</span><span class="product-price">₪126</span></li>
+        <li class="product-item"><span class="product-name">תיק שקוף לרחפן DJI NEO</span><span class="product-price">₪84</span></li>
+        <li class="product-item"><span class="product-name">מייצב DJI OSMO MOBILE 6</span><span class="product-price">₪592</span></li>
+        <li class="product-item"><span class="product-name">כבל קשירה גלשן ACTION 3 DJI</span><span class="product-price">₪84</span></li>
+        <li class="product-item"><span class="product-name">ערכת חזה ACTION 3 DJI</span><span class="product-price">₪152</span></li>
+        <li class="product-item"><span class="product-name">מעמד כדורי ACTION 3 DJI</span><span class="product-price">₪109</span></li>
+        <li class="product-item"><span class="product-name">ערכת בסיס מעמד ACTION 3 DJI</span><span class="product-price">₪67</span></li>
+        <li class="product-item"><span class="product-name">ערכת טעינה ל 3 סוללות ACTION 3 DJI</span><span class="product-price">₪143</span></li>
+        <li class="product-item"><span class="product-name">סוללה לרחפן מיני PLUS 3</span><span class="product-price">₪169</span></li>
+        <li class="product-item"><span class="product-name">ערכת קומבו GOGGLES 2 ושלט MOTION 2</span><span class="product-price">₪1,694</span></li>
+        <li class="product-item"><span class="product-name">ערכת קומבו GOGGLES INTEGRA ושלט MOTION 2</span><span class="product-price">₪847</span></li>
+        <li class="product-item"><span class="product-name">רחפן מיני שלט חכם MINI 4 קומבו PLUS DJI</span><span class="product-price">₪3,389</span></li>
+        <li class="product-item"><span class="product-name">מייצב DJI OSMO POCKET 3 קומבו</span><span class="product-price">₪1,821</span></li>
+        <li class="product-item"><span class="product-name">סוללה ל OSMO POCKET 3</span><span class="product-price">₪219</span></li>
+        <li class="product-item"><span class="product-name">סט פילטרים ND ל OSMO POCKET 3</span><span class="product-price">₪219</span></li>
+        <li class="product-item"><span class="product-name">רחפן DJI AVATA 2 FLY MORE COMBO 1 BATTERY</span><span class="product-price">₪3,389</span></li>
+        <li class="product-item"><span class="product-name">רחפן DJI AVATA 2 FLY MORE COMBO 3 BATTERY</span><span class="product-price">₪3,686</span></li>
+        <li class="product-item"><span class="product-name">מטען/רכזת DJI AVATA 2 CHARGING HUB</span><span class="product-price">₪423</span></li>
+        <li class="product-item"><span class="product-name">סוללה DJI AVATA 2 INTELLEGENT FLIGHT BATTERY</span><span class="product-price">₪592</span></li>
+        <li class="product-item"><span class="product-name">מייצב DJI RONIN RS4</span><span class="product-price">₪1,440</span></li>
+        <li class="product-item"><span class="product-name">מייצב DJI RONIN RS4 COMBO</span><span class="product-price">₪2,203</span></li>
+        <li class="product-item"><span class="product-name">מייצב DJI RONIN RS4 PRO COMBO</span><span class="product-price">₪3,558</span></li>
+        <li class="product-item"><span class="product-name">רחפן DJI NEO</span><span class="product-price">₪762</span></li>
+        <li class="product-item"><span class="product-name">רחפן DJI NEO FLY MORE COMBO</span><span class="product-price">₪1,313</span></li>
+        <li class="product-item"><span class="product-name">מצלמת DJI ACTION 5 STANDARD COMBO</span><span class="product-price">₪1,101</span></li>
+        <li class="product-item"><span class="product-name">רכזת טעינה לסוללות DJI NEO</span><span class="product-price">₪169</span></li>
+        <li class="product-item"><span class="product-name">סוללה DJI NEO INTELLEGENT FLIGHT BATTERY</span><span class="product-price">₪253</span></li>
+        <li class="product-item"><span class="product-name">סוללה לרחפן AIR 3S</span><span class="product-price">₪592</span></li>
+        <li class="product-item"><span class="product-name">שלט רגיל RC N3 ל NEO</span><span class="product-price">₪465</span></li>
+        <li class="product-item"><span class="product-name">שלט חכם RC 2 ל MINI 4/NEO</span><span class="product-price">₪1,482</span></li>
+        <li class="product-item"><span class="product-name">מתאם LIGHTINING למיקרופון אלחוטי DJI MINI</span><span class="product-price">₪67</span></li>
+        <li class="product-item"><span class="product-name">מתאם מיק DJI 2 למצלמות MIC 2 CAMERA ADAPTER</span><span class="product-price">₪135</span></li>
+        <li class="product-item"><span class="product-name">OSMO ACTION MULTIFUNCTIONAL CHARGING HANDLE</span><span class="product-price">₪355</span></li>
+        <li class="product-item"><span class="product-name">OSMO ACTION GPS BLUETOOTH REMOTE CONTROLLER</span><span class="product-price">₪279</span></li>
+        <li class="product-item"><span class="product-name">OSMO ACTION FLOATING CASE</span><span class="product-price">₪169</span></li>
+        <li class="product-item"><span class="product-name">OSMO ACTION 3.5MM AUDIO ADAPTER</span><span class="product-price">₪211</span></li>
+        <li class="product-item"><span class="product-name">OSMO ACTION COLD SHOE EXPANSION KIT</span><span class="product-price">₪126</span></li>
+        <li class="product-item"><span class="product-name">יחידת AIR UNIT O4 PRO DJI</span><span class="product-price">₪1,143</span></li>
+        <li class="product-item"><span class="product-name">מייצב OSMO MOBILE 7</span><span class="product-price">₪279</span></li>
+        <li class="product-item"><span class="product-name">מייצב OSMO MOBILE 7P</span><span class="product-price">₪364</span></li>
+        <li class="product-item"><span class="product-name">מייצב DJI RS 4 Mini Combo</span><span class="product-price">₪1,313</span></li>
+        <li class="product-item"><span class="product-name">יחידת AIR UNIT O4 DJI</span><span class="product-price">₪508</span></li>
+        <li class="product-item"><span class="product-name">רחפן מאוויק MAVIC 4 PRO RC</span><span class="product-price">₪7,881</span></li>
+        <li class="product-item"><span class="product-name">רחפן מאוויק MAVIC 4 PRO RC קומבו</span><span class="product-price">₪10,169</span></li>
+        <li class="product-item"><span class="product-name">רחפן מאוויק MAVIC 4 PRO RC CREATOR קומבו – 512GB</span><span class="product-price">₪13,558</span></li>
+        <li class="product-item"><span class="product-name">מצלמת OSMO 360 Standard Combo</span><span class="product-price">₪1,482</span></li>
+        <li class="product-item"><span class="product-name">רחפן באנדל DJI AVATA 2 + INTEGRA GOOGLE+MOTION 2</span><span class="product-price">₪2,542</span></li>
+        <li class="product-item"><span class="product-name">מצלמת OSMO 360 ADVANTURE Combo</span><span class="product-price">₪1,991</span></li>
+        <li class="product-item"><span class="product-name">מיקרופון אלחוטי DJI 3 בודד</span><span class="product-price">₪677</span></li>
+        <li class="product-item"><span class="product-name">מיקרופון אלחוטי DJI 3 זוגי</span><span class="product-price">₪1,101</span></li>
+        <li class="product-item"><span class="product-name">משדר מיקרופון אלחוטי DJI 3</span><span class="product-price">₪592</span></li>
+        <li class="product-item"><span class="product-name">סט 4 פילטרים ל MINI 4 DJI</span><span class="product-price">₪211</span></li>
+        <li class="product-item"><span class="product-name">רכזת טעינה MAVIC 4 DJI</span><span class="product-price">₪381</span></li>
+        <li class="product-item"><span class="product-name">סוללה לרחפן MAVIC 4 DJI</span><span class="product-price">₪762</span></li>
+        <li class="product-item"><span class="product-name">מארז עמיד למים ACTION 5 DJI</span><span class="product-price">₪253</span></li>
+        <li class="product-item"><span class="product-name">DJI MIC 3 MOBILE LIGHTNING PHONE ADAPTER</span><span class="product-price">₪75</span></li>
+        <li class="product-item"><span class="product-name">OSMO SELFIE STICK CLIP MOUNT DJI</span><span class="product-price">₪75</span></li>
+        <li class="product-item"><span class="product-name">OSMO 360 CARRY BAG DJI</span><span class="product-price">₪126</span></li>
+        <li class="product-item"><span class="product-name">OSMO BIKE REAR MOUNT KIT DJI</span><span class="product-price">₪270</span></li>
+        <li class="product-item"><span class="product-name">OSMO VORTEX ROTATING HANDLE DJI</span><span class="product-price">₪152</span></li>
+        <li class="product-item"><span class="product-name">מצלמת DJI OSMO NANO 64GB</span><span class="product-price">₪1,016</span></li>
+        <li class="product-item"><span class="product-name">רחפן מיני שלט חכם MINI 5 PRO קומבו PLUS DJI</span><span class="product-price">₪4,067</span></li>
+        <li class="product-item"><span class="product-name">רחפן מיני שלט חכם MINI 5 PRO קומבו DJI</span><span class="product-price">₪3,813</span></li>
+        <li class="product-item"><span class="product-name">רחפן מיני DJI MINI 5 PRO</span><span class="product-price">₪2,881</span></li>
+        <li class="product-item"><span class="product-name">מייצב OSMO MOBILE 8</span><span class="product-price">₪508</span></li>
+        <li class="product-item"><span class="product-name">רחפן DJI NEO 2 MOTION FLY MORE COMBO</span><span class="product-price">₪2,203</span></li>
+        <li class="product-item"><span class="product-name">רחפן DJI NEO 2 FLY MORE COMBO</span><span class="product-price">₪1,609</span></li>
+        <li class="product-item"><span class="product-name">רחפן (DRONE ONLY)DJI NEO 2 FLY MORE COMBO</span><span class="product-price">₪1,228</span></li>
+        <li class="product-item"><span class="product-name">מצלמת DJI ACTION 6 ADVENTURE COMBO</span><span class="product-price">₪1,652</span></li>
+        <li class="product-item"><span class="product-name">מצלמת DJI ACTION 6 STANDARD COMBO</span><span class="product-price">₪1,313</span></li>
+        <li class="product-item"><span class="product-name">REMOTE CONTROL RC PRO 2 FOR MAVIC 4</span><span class="product-price">₪4,236</span></li>
+        <li class="product-item"><span class="product-name">מייצב DJI RONIN RS5 COMBO</span><span class="product-price">₪2,075</span></li>
+        <li class="product-item"><span class="product-name">מייצב DJI RONIN RS5</span><span class="product-price">₪1,779</span></li>
+        <li class="product-item"><span class="product-name">OSMO ACTION 6 DIVING ACCESORY KIT</span><span class="product-price">₪270</span></li>
+        <li class="product-item"><span class="product-name">OSMO ACTION 6 ND FILTER SET</span><span class="product-price">₪211</span></li>
+        <li class="product-item"><span class="product-name">עדשה רחבה OSMO ACTION 6 FOV BOOST LENS</span><span class="product-price">₪381</span></li>
+        <li class="product-item"><span class="product-name">עדשת מאקרו OSMO ACTION 6 MACRO LENS LENS</span><span class="product-price">₪626</span></li>
+        <li class="product-item"><span class="product-name">DJI Neo 2 Digital Transceiver</span><span class="product-price">₪84</span></li>
+        <li class="product-item"><span class="product-name">DJI ROMO A</span><span class="product-price">₪3,813</span></li>
+        <li class="product-item"><span class="product-name">DJI ROMO S</span><span class="product-price">₪3,389</span></li>
+        <li class="product-item"><span class="product-price">DJI ROMO P</span><span class="product-price">₪4,491</span></li>
+        <li class="product-item"><span class="product-name">מברשת ROMO Side Brush</span><span class="product-price">₪109</span></li>
+        <li class="product-item"><span class="product-name">פילטר ROMO High-Efficiency Filter</span><span class="product-price">₪118</span></li>
+        <li class="product-item"><span class="product-name">שקית אבק ROMO Base Station Dust Bag</span><span class="product-price">₪109</span></li>
+        <li class="product-item"><span class="product-name">מברשת ROMO Roller Brush With Bristles and Rubber</span><span class="product-price">₪109</span></li>
+        <li class="product-item"><span class="product-name">משטח שיפוע ROMO Auxiliary Ramp</span><span class="product-price">₪84</span></li>
+        <li class="product-item"><span class="product-name">מברשת רולר פלסטית ROMO Rubber Roller Brush</span><span class="product-price">₪109</span></li>
+        <li class="product-item"><span class="product-name">ערכת אביזרים ROMO Accessory Kit(GL)</span><span class="product-price">₪677</span></li>
+        <li class="product-item"><span class="product-name">פד שטיפה ROMO Mop Pad (GL)</span><span class="product-price">₪109</span></li>
+        <li class="product-item"><span class="product-name">נוזל ניקיון ROMO Cleaning Solution(GL)</span><span class="product-price">₪67</span></li>
+        <li class="product-item"><span class="product-name">מבשם ROMO Floor Deodorizer</span><span class="product-price">₪75</span></li>
+        <li class="product-item"><span class="product-name">OSMO 1.5M EXTENSION ROD KIT(DUAL-DIRECTION QUICK-RELEASE)</span><span class="product-price">₪143</span></li>
+        <li class="product-item"><span class="product-name">מוט Osmo 2.5m Extended Carbon Fiber Selfie Stic</span><span class="product-price">₪381</span></li>
+        <li class="product-item"><span class="product-name">רחפן - (DJI Avata 360(DJI RC 2</span><span class="product-price">₪2,669</span></li>
+        <li class="product-item"><span class="product-name">רחפן - (DJI Avata 360 Motion Fly More Combo (DJI Goggles N3</span><span class="product-price">₪3,728</span></li>
+        <li class="product-item"><span class="product-name">רחפן - (DJI Avata 360 Fly More Combo (DJI RC 2</span><span class="product-price">₪3,728</span></li>
+        <li class="product-item"><span class="product-name">רחפן - (DJI Lito X1 Fly More Combo (DJI RC 2</span><span class="product-price">₪2,499</span></li>
+        <li class="product-item"><span class="product-name">רחפן - (DJI Lito X1 Fly More Combo Plus (DJI RC 2</span><span class="product-price">₪2,838</span></li>
+        <li class="product-item"><span class="product-name">רחפן - DJI Lito 1</span><span class="product-price">₪1,228</span></li>
+        <li class="product-item"><span class="product-name">רחפן -(DJI Lito 1 Fly More Combo (DJI RC-RN3</span><span class="product-price">₪1,821</span></li>
+        <li class="product-item"><span class="product-name">רכזת טעינה - DJI Neo 2 Two-Way Charging Hub</span><span class="product-price">₪126</span></li>
+        <li class="product-item"><span class="product-name">סוללה לרחפן - DJI Neo 2 Intelligent Flight Battery</span><span class="product-price">₪143</span></li>
+        <li class="product-item"><span class="product-name">ערכת החלפת עדשה עם כלים -DJI Avata 360 Replacement Lens Kit</span><span class="product-price">₪143</span></li>
+        <li class="product-item"><span class="product-name">ערכת החלפת עדשה - DJI Avata 360 Replacement Lens Kit</span><span class="product-price">₪109</span></li>
+        <li class="product-item"><span class="product-name">מתאם רסיבר-DJI Mic Series Mobile Receiver Adapter (USB-C to</span><span class="product-price">₪75</span></li>
+        <li class="product-item"><span class="product-name">קייס צלילה- Osmo Action 6 Waterproof Case</span><span class="product-price">₪219</span></li>
+        <li class="product-item"><span class="product-name">פילטרים -(OSMO NANO ND Filter (8/16/32</span><span class="product-price">₪228</span></li>
+        <li class="product-item"><span class="product-name">תושבת למושב אופניים -Osmo Action Bike Seat Rail Mount</span><span class="product-price">₪75</span></li>
+        <li class="product-item"><span class="product-name">מייצב DJI OSMO POCKET CREATOR COMBO 4 קומבו</span><span class="product-price">₪1,864</span></li>
+        <li class="product-item"><span class="product-name">מייצב DJI OSMO POCKET STANDARD COMBO 4 קומבו</span><span class="product-price">₪1,609</span></li>
+        <li class="product-item"><span class="product-name">מיקרופון אלחוטי DJI Mic Mini 2 (2 TX + 1 Mobile RX Chargin</span><span class="product-price">₪253</span></li>
+        <li class="product-item"><span class="product-name">מיקרופון אלחוטי (Mic Mini 2 (2 TX + 1 RX + Charging Case</span><span class="product-price">₪338</span></li>
+        <li class="product-item"><span class="product-name">מיקרופון אלחוטי(DJI Mic Mini 2 (1 TX + 1 RX</span><span class="product-price">₪211</span></li>
+        <li class="product-item"><span class="product-name">מייצב לטלפון Osmo Mobile 8P Creator Combo</span><span class="product-price">₪847</span></li>
+        <li class="product-item"><span class="product-name">מייצב לטלפון Osmo Mobile 8P AdvancedTracking Combo</span><span class="product-price">₪677</span></li>
+        <li class="product-item"><span class="product-name">תושבת מצלמה לקסדת רכיבה - DJI Osmo Helmet Chin Mount Clip</span><span class="product-price">₪160</span></li>
+        <li class="product-item"><span class="product-name">מסגרת למצלמת אקשן Osmo Action 6 Utility Frame 6</span><span class="product-price">₪169</span></li>
+        <li class="product-item"><span class="product-name">מצלמת Osmo 360 2 Adventure combo</span><span class="product-price">₪2,287</span></li>
+        <li class="product-item"><span class="product-name">רצועת צוואר לשלט</span><span class="product-price">₪84</span></li>
+        <li class="product-item"><span class="product-name">מתאם מצלמה מגנטי+וואקום</span><span class="product-price">₪109</span></li>
+        <li class="product-item"><span class="product-name">מעמד לטלפון מגנטי לשלט ללא מסך</span><span class="product-price">₪84</span></li>
+        <li class="product-item"><span class="product-name">מעמד ACTION לקסדה</span><span class="product-price">₪67</span></li>
+        <li class="product-item"><span class="product-name">מזוודה קשיחה MAVIC 4</span><span class="product-price">₪253</span></li>
+        <li class="product-item"><span class="product-name">מזוודה קשיחה AIR SERIE</span><span class="product-price">₪211</span></li>
+        <li class="product-item"><span class="product-name">מזוודה קשיחה MINI SERIE</span><span class="product-price">₪169</span></li>
+        <li class="product-item"><span class="product-name">תיק צד MINI 4 PRO</span><span class="product-price">₪126</span></li>
+        <li class="product-item"><span class="product-name">מזוודה קשיחה AVATA 360</span><span class="product-price">₪169</span></li>
+        <li class="product-item"><span class="product-name">תיק צד AVATA 360</span><span class="product-price">₪211</span></li>
+        <li class="product-item"><span class="product-name">מזוודה קשיחה LITO</span><span class="product-price">₪169</span></li>
+        <li class="product-item"><span class="product-name">תיק צד LITO</span><span class="product-price">₪84</span></li>
+        <li class="product-item"><span class="product-name">תיק צד NEO 2 COMBO</span><span class="product-price">₪109</span></li>
+        <li class="product-item"><span class="product-name">תיק צד NEO 2 בסיס</span><span class="product-price">₪126</span></li>
+        <li class="product-item"><span class="product-name">מזוודה קשיחהNEO 2</span><span class="product-price">₪169</span></li>
+        <li class="product-item"><span class="product-name">מזוודה קשיחה MAVIC 2</span><span class="product-price">₪169</span></li>
+        <li class="product-item"><span class="product-name">תיק גב AVATA 2</span><span class="product-price">₪126</span></li>
+        <li class="product-item"><span class="product-name">50cm משטח נחיתה</span><span class="product-price">₪58</span></li>
+        <li class="product-item"><span class="product-name">מטען 240W - POWER ADAPTER DJI</span><span class="product-price">₪592</span></li>
     </ul>
     <div id="noResults" class="no-results">לא נמצאו מוצרים תואמים לחיפוש.</div>
 </div>
